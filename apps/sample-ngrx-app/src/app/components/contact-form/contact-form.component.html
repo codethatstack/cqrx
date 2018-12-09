@@ -1,0 +1,19 @@
+<form fxLayout="column" [formGroup]="form">
+
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Contact name" formControlName="name" autocomplete="off">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Email" formControlName="email" autocomplete="off">
+  </mat-form-field>
+
+  <div>
+    <button mat-raised-button color="primary" (click)="save()">
+      Save and close
+    </button>
+    <mat-spinner *ngIf="pending" [diameter]="30" ></mat-spinner>
+  </div>
+</form>
+  
+  

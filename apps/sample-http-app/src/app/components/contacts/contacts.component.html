@@ -1,0 +1,15 @@
+<h1>
+  Contacts
+</h1>
+<mat-nav-list *ngIf="!(contactsQuery.pending | async); else loading">
+  <mat-list-item *ngFor="let item of contactsQuery.values | async">
+    <a matLine [routerLink]="['contact', item.id]">{{ item.name }}</a>
+    <button mat-icon-button (click)="showInfo(link)">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-nav-list>
+
+<ng-template #loading>
+  <mat-spinner></mat-spinner>
+</ng-template>

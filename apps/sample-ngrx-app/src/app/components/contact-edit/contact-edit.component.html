@@ -1,0 +1,21 @@
+<mat-card class="contact-card">
+  <mat-card-title>Contact</mat-card-title>
+  <mat-card-content>
+
+    <div *ngIf="!(contactQuery.pending | async); else loading">
+      <cts-contact-form 
+        [contact]="contactQuery.values | async"
+        [pending]="saveContactCommand.pending | async"
+        (changes)="save($event)">
+      </cts-contact-form>
+    </div>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <ng-content class="card-actions"></ng-content>
+  </mat-card-actions>
+</mat-card>
+
+<ng-template #loading>
+  <mat-spinner></mat-spinner>
+</ng-template>

@@ -1,0 +1,43 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@cqrx/core": [
+        "libs/core/src/index.ts"
+      ],
+      "@codethatstack/common-ui": [
+        "libs/common-ui/src/index.ts"
+      ],
+      "@codethatstack/data/api": [
+        "libs/data/api/src/index.ts"
+      ],
+      "@codethatstack/data/models": [
+        "libs/data/models/src/index.ts"
+      ],
+      "@codethatstack/data/state": [
+        "libs/data/state/src/index.ts"
+      ],
+      "@codethatstack/data/contracts": [
+        "libs/data/contracts/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

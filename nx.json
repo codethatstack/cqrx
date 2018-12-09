@@ -1,0 +1,39 @@
+{
+  "npmScope": "codethatstack",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "core": {
+      "tags": []
+    },
+    "sample-http-app": {
+      "tags": []
+    },
+    "sample-http-app-e2e": {
+      "tags": []
+    },
+    "common-ui": {
+      "tags": []
+    },
+    "data-api": {
+      "tags": []
+    },
+    "data-models": {
+      "tags": []
+    },
+    "sample-ngrx-app": {
+      "tags": []
+    },
+    "sample-ngrx-app-e2e": {
+      "tags": []
+    },
+    "data-state": {
+      "tags": []
+    }
+  }
+}
