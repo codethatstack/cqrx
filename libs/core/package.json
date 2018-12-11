@@ -1,6 +1,11 @@
 {
   "name": "@cqrx/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description" : "CQRS Reactive Library",
+  "repository": "github:codethatstack/cqrx",
+  "keywords": ["cqrx","rxjs","angular","ngx","state","facade"],
+  "author": "Anthony Miller",
+  "license": "MIT",
   "peerDependencies": {
     "rxjs": "^6.0.0"
   }
